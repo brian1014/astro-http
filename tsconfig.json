@@ -8,6 +8,12 @@
     "dist"
   ],
   "compilerOptions": {
-    "strictNullChecks": true
-  }
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@db": [
+        "./src/db"
+      ]
+    }
+  },
 }
