@@ -34,8 +34,6 @@ watch(likeCount, debounce((newValue, oldValue) => {
 }, 500))
 
 const likePost = async () => {
-  console.log('lik + 1');
-  
   likeCount.value += 1
   likeClicks.value += 1
 
@@ -57,7 +55,6 @@ const getCurrentLikes = async () => {
 
   likeCount.value = data.likes;
   isLoading.value = false;
-  console.log('likes => ', likeCount.value)
 };
 
 await getCurrentLikes()
